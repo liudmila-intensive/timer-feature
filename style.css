@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Roboto Slab";
+}
+
+.content {
+  width: 100%;
+  background: url(/img/main_bg.jpg);
+  padding: 20px;
+}
+.content .timer {
+  text-align: center;
+}
+.content .timer-title {
+  font-size: 36px;
+  color: #c78030;
+}
+.content .timer-action {
+  font-size: 24px;
+  color: #fff;
+  margin-top: 40px;
+}
+.content .timer-numbers {
+  margin-top: 40px;
+  font-size: 90px;
+  color: #c78030;
+}
+.content .timer-numbers:after {
+  content: '';
+  display: block;
+  width: 20%;
+  height: 1px;
+  background-color: #c78030;
+  margin: 0 auto;
+  margin-top: 4px;
+}
+.content .more {
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+  width: 250px;
+  height: 60px;
+  background-color: transparent;
+  border: 1px solid #c78030;
+  font-size: 18px;
+  color: #c78030;
+  cursor: pointer;
+}
+.content .more:hover {
+  box-shadow: 0 0 10px #c78030;
+}
