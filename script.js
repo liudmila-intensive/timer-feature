@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', function() {
         let timer = document.getElementById(id),
             hours = timer.querySelector('.hours'),
             minutes = timer.querySelector('.minutes'),
-            seconds = timer.querySelector('.seconds');
+            seconds = timer.querySelector('.seconds'),
             timeInterval = setInterval(updateClock, 1000);
         
         function updateClock() {
@@ -40,6 +40,7 @@ window.addEventListener('DOMContentLoaded', function() {
             seconds.textContent = addZero(t.seconds);
 
             if (t.total <= 0) {
+                clearInterval(timeInterval);
                 hours.textContent = '00';
                 minutes.textContent = '00';
                 seconds.textContent = '00';
